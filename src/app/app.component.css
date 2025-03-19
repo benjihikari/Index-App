@@ -1,0 +1,38 @@
+main {
+  display: flex;
+  width: 100%;
+}
+.sideBar {
+  width: 95px;
+  height: 100vh;
+  background: #f3f3f3;
+  padding: 0px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebarMenu {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px;
+  background: #f3f3f3;
+}
+.sidebarMenu ul {
+  list-style: none;
+  text-align: center;
+}
+.sidebarMenu ul li {
+  margin-top: 25px;
+}
+.sidebarMenu a {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  text-decoration: none;
+  color: #202020;
+}
+
+.contain {
+  width: 100%;
+  padding: 25px;
+}
