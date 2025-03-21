@@ -1,0 +1,50 @@
+.wholesalerContainer {
+  width: 100%;
+  min-height: 90vh;
+  border: 2px solid #e6e6e6;
+}
+.wholesaler__titles {
+  background-color: #252525;
+}
+.wholesaler__titles article {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0px;
+  text-align: center;
+}
+.wholesaler__filters {
+  padding: 15px 0px;
+  text-align: center;
+}
+.wholesaler__filters form {
+  display: flex;
+  justify-content: space-around;
+}
+#search {
+  width: 320px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #252525;
+  padding-left: 25px;
+  font-size: 15px;
+  color: #e6e6e6;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.wholesaler__filters button {
+  width: 80px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #e6e6e6;
+  font-size: 15px;
+  font-weight: bold;
+  color: #252525;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.wholesaler__data {
+  padding: 15px 0px;
+  text-align: center;
+}

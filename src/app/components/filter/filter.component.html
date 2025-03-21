@@ -1,18 +1,7 @@
-
-<table>
-  <thead>
-    <tr>
-      <th>Índice</th>
-      <th>Valuación I</th>
-      <th>Valuación II</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>{{producer.name}}</th>
-      <td>{{producer.type}}</td>
-      <td>{{producer.validation}}</td>
-    </tr>
-  </tbody>
-</table>
-
+<div>
+  <article>
+    <p>{{ producer?.name }}</p>
+    <p>{{ producer?.type }}</p>
+    <p>{{ producer?.validation }}</p>
+  </article>
+</div>

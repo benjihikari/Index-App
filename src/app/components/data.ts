@@ -3,4 +3,5 @@ export interface Data {
   name: string;
   validation: number;
   type: string;
+  isValide: boolean;
 }

@@ -1,4 +1,28 @@
-<p>producer works!</p>
-<app-filter *ngFor="let producer of ProducerList"
-[producer]="producer">
-</app-filter>
+<div>
+  <section class="producerContainer">
+    <div class="producer__titles">
+      <article>
+        <h4>Índice</h4>
+        <h4>Cargo</h4>
+        <h4>Valuación II</h4>
+      </article>
+    </div>
+    <div class="producer__filters">
+      <form action="get">
+        <div>
+          <input type="text" placeholder="Buscar por empresa" #filter id="search"/>
+          <button type="button"
+          (click)="searchResult(filter.value)">Buscar</button>
+        </div>
+        <input
+          type="checkbox"
+          name="filterCheck"
+          placeholder="Filtrar por Valuacion"
+          [(ngModel)]="showValidation"
+        />
+      </form>
+    </div>
+    <app-filter *ngFor="let producer of ProducerFilter" [producer]="producer" class="producer__data">
+    </app-filter>
+  </section>
+</div>

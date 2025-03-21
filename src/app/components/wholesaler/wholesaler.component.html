@@ -1,5 +1,28 @@
-<p>wholesaler works!</p>
-<app-filter
-*ngFor="let producer of WholesalerList"
-[producer]="producer">
-</app-filter>
+<section class="wholesalerContainer">
+  <div class="wholesaler__titles">
+    <article>
+      <h4>Índice</h4>
+      <h4>Cargo</h4>
+      <h4>Valuación II</h4>
+    </article>
+  </div>
+  <div class="wholesaler__filters">
+    <form>
+      <div>
+        <input type="text" placeholder="Buscar por empresa" #filter id="search"/>
+        <button type="button"
+        (click)="searchResult(filter.value)">Buscar</button>
+      </div>
+      <input
+        type="checkbox"
+        name="filterCheck"
+        placeholder="Filtrar por Valuacion"
+        [(ngModel)]="showValidation"
+      />
+    </form>
+  </div>
+  <app-filter
+  *ngFor="let producer of WholesalerFilter"
+  [producer]="producer" class="wholesaler__data">
+  </app-filter>
+</section>
